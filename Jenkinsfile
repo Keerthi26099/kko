@@ -3,7 +3,7 @@ pipeline{
     stages{
       stage(clone){
         steps{
-        git url "https://github.com/Keerthi26099/kko.git"
+        git url:"https://github.com/Keerthi26099/kko.git"
     }
       }
       stage(build)
