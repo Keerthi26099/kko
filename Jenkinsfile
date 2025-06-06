@@ -10,13 +10,19 @@ pipeline {
 
         stage('Build') {
             steps {
-                bat 'javac K.java'
+                bat '''
+                    cd src
+                    javac K.java
+                '''
             }
         }
 
         stage('Run') {
             steps {
-                bat 'java K'
+                bat '''
+                    cd src
+                    java K
+                '''
             }
         }
     }
