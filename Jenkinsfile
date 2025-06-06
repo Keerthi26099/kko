@@ -22,13 +22,13 @@ pipeline {
 
         stage('Build') {
             steps {
-                bat 'javac H.java'
+                bat 'javac K.java'
             }
         }
 
         stage('Run') {
             steps {
-                bat 'java H'
+                bat 'java K'
             }
         }
     }
